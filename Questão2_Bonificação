@@ -1,0 +1,22 @@
+'''Faça um programa em python, que receba o salário de um funcionário,
+calcule e mostre o novo salario, acrescido de bonificação.
+SALARIO BONIFICAÇÃO
+Até R$ 500,00 5% do salário
+Entre R$ 500,00 e R$ 1200,00 12% do salário
+Acima de R$ 1200,00 Sem bonificação'''
+
+
+print("=====MUDANÇA DE SALÁRIO=====")
+
+
+Salario = float(input("Diga o seu salário: R$"))   #<--- Entrada
+
+
+if Salario <= 500:  #<--- Processamento
+    print(f"O seu salário é R${Salario:.2f}\nAcrescido de bonificação ficou em R${Salario + (Salario * 0.05):.2f}")   #<--- Saída
+   
+elif 501 <= Salario <= 1200:   #<--- Processamento
+    print(f"O seu salário é R${Salario:.2f}\nAcrescido de bonificação ficou em R${Salario + (Salario * 0.12):.2f}")   #<--- Saída
+   
+else:   #<--- Saída
+    print(f"O seu salário é R${Salario:.2f}\nNão recebe bonificação.")   #<--- Saída
