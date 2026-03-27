@@ -1,0 +1,20 @@
+'''Escreva um programa em python, que converta uma temperatura
+digitada em ºC ( Celsius,) em ºF ( Fahrenheit, ). A formula
+para fazer conversão é:
+F = (9xC)/5 + 32
+O programa deverá mostrar o valor da temperatura em Fahrenheit.'''
+
+
+from time import sleep
+
+
+print("=====CONVERSÃO DE CELSIUS PARA FAHRENHEIT=====") #<--- apresentação
+
+
+Celsius = float(input("Diga a temperatura (°C): "))  #<--- Entrada
+F = (9*Celsius)/5 + 32  #<--- Processamento
+
+
+print("CALCULANDO...")
+sleep(1.2)
+print(f"A temperatura convertida é {F:.1f}°F")  #<--- Saída
