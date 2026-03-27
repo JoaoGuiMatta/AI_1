@@ -1,0 +1,14 @@
+'''Considere que se o salario for maior ou igual a 1600,00 reais e a idade
+for maior ou igual a 18 anos, então ganhará uma bonificação de
+1000,00. Imprima o novo salario com bonificação, caso atenda as
+condições anteriores, caso contrario imprima: não há bonificação.'''
+
+print("=====BONIFICAÇÃO=====")   #<--- Apresentação
+
+Idade = int(input("Diga a sua idade: "))   #<--- Entrada
+Salario = float(input("Diga o seu salário: "))   #<--- Entrada
+
+if (Salario >= 1600) and (Idade == 18):   #<--- Processamento
+    print(f"Você recebeu uma bonificação de R$1000,00.\nEntão, ficou em R${Salario+1000:.2f}.")   #<--- Saída
+else:
+    print("Não há bonificação. Requisito(s) não atendido(s).")   #<--- Saída
